@@ -1,0 +1,10 @@
+export const environment = {
+  "enableProductionMode": false,
+  "showLogs": true,
+  "production": false,
+  "apiBaseUrl": "https://dashboardapi-local.boltqa.com/",
+  "favIcon": "assets/icons/{tenant}/favicon.ico",
+  "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+  "gtmId": ""
+}
+;

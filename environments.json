@@ -1,0 +1,92 @@
+{
+  "local": {
+    "enableProductionMode": false,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-local.boltqa.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": ""
+  },
+  "dev": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-dev-{tenant}.boltqa.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "qa": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-qa-{tenant}.boltqa.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "qaRelease": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-release-qa-{tenant}.boltqa.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "train": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-{tenant}.bolttraining.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "uat": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-{tenant}.bolttest.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "sandbox": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-{tenant}.boltsandbox.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "load": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": false,
+    "apiBaseUrl": "https://dashboardapi-load-{tenant}.boltinc.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-MRDS6V6"
+  },
+  "prod": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": true,
+    "apiBaseUrl": "https://dashboardapi-{tenant}.boltinc.com/",
+    "favIcon": "assets/icons/{tenant}/favicon.ico",
+    "gooleApiKey": "AIzaSyD90IeK2kAT9jtZ5CMVfPb2YmLZvGIVrp0",
+    "gtmId": "GTM-TJXS39J"
+  },
+  "cloud": {
+    "enableProductionMode": true,
+    "showLogs": true,
+    "production": true,
+    "apiBaseUrl": "https://dashboardapiBOLT_DOMAIN/",
+    "favIcon": "assets/icons/BOLT_TENANTFAV/favicon.ico",
+    "gooleApiKey": "BOLT_MAPS_API_TOKEN",
+    "gtmId": "BOLT_TAGMANAGER"
+  }
+}
