@@ -6,6 +6,12 @@ import { debounce, first } from "rxjs/operators";
 import { UpdateTest } from "../../../store/actions/test.actions";
 import { selectTest } from "../../../store/selectors/test.selector";
 import { Itest } from "../../../store/states/test.state";
+import { AngularFirestore } from "@angular/fire/firestore";
+import {
+  AngularFireDatabase,
+  AngularFireList,
+  AngularFireObject
+} from "@angular/fire/database";
 
 @Component({
   selector: "app-test",
@@ -16,12 +22,28 @@ export class TestComponent implements OnInit {
   store;
   test$: Observable<Itest>;
   test;
+  // db:AngularFireDatabase;
 
-  constructor(store: Store) {
+  constructor(
+    store: Store,
+    firestore: AngularFirestore,
+    private db: AngularFireDatabase
+  ) {
     this.store = store;
+    this.db = db;
   }
   testForm: FormGroup;
   ngOnInit(): void {
+    let database = this.db.object("watches/");
+    database.valueChanges().subscribe(res => {
+      console.log(res);
+    });
+    // var starCountRef = database.ref("watches/");
+    // starCountRef.on("value", snapshot => {
+    //   const data = snapshot.val();
+    //   console.log(data);
+    // });
+
     this.testForm = new FormGroup({}, null, null);
     this.testForm.addControl("test", new FormControl());
 
@@ -29,8 +51,6 @@ export class TestComponent implements OnInit {
       .pipe(debounce(() => interval(300)))
       .subscribe(() => {
         let dataObj = this.testForm.getRawValue();
-        console.log(dataObj);
-
         this.store.dispatch(UpdateTest({ test: dataObj.test }));
       });
 
